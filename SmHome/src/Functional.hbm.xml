@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.SmHome.beans">
+
+   <class name="FunctionalBean" table="l2_functional">      
+      <id name="id" type="int" column="id">
+         <generator class="assigned"/>
+      </id>
+      <property name="type" column="type" type="string"/>      
+      <property name="roomNumber" column="room_no" type="int"/>
+      <property name="hall" column="hall" type="int"/>
+       <property name="kitchen" column="kitchen" type="int"/>
+        <property name="bathRoom" column="bath_room" type="int"/>
+         <property name="extraInfo1" column="extra_info1" type="string"/>
+          <property name="extraInfo2" column="extra_info2" type="string"/>
+        
+   </class>
+</hibernate-mapping>

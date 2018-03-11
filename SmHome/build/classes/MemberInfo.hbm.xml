@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.SmHome.beans">
+
+   <class name="MembersBean" table="members_info">      
+      <id name="id" type="int" column="id">
+         <generator class="assigned"/>
+      </id>
+      <property name="adminId" column="admin_id" type="int"/>      
+      <property name="authLevel" column="auth_level" type="int"/>
+      <property name="password" column="password" type="string"/>
+      <property name="email" column="email" type="string"/>
+     
+        
+   </class>
+</hibernate-mapping>

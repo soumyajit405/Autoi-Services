@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.SmHome.beans">
+
+   <class name="RoomBean" table="room_info">      
+      <id name="roomId" type="string" column="room_id">
+         <generator class="assigned"/>
+      </id>
+         
+      <property name="homeId" column="home_id" type="string"/>
+      <property name="description" column="description" type="string"/>
+      <property name="info1" column="info1" type="string"/>
+       <property name="info2" column="info2" type="string"/>
+        <property name="info3" column="info3" type="string"/>
+         <property name="info4" column="info4" type="string"/>
+          <property name="info5" column="info5" type="string"/>
+           <property name="info6" column="info6" type="string"/>
+             <property name="roomType" column="room_type" type="string"/>
+            
+            
+        
+   </class>
+</hibernate-mapping>

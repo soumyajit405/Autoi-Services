@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.SmHome.beans">
+
+   <class name="AdminTokenBean" table="admin_token">      
+      <id name="id" type="int" column="id">
+         <generator class="assigned"/>
+      </id>
+      <property name="token" column="token" type="string"/>      
+      <property name="homeId" column="home_id" type="string"/>
+      <property name="generatedTime" column="generated_time" type="timestamp"/>
+       <property name="tokenStatus" column="token_status" type="string"/>
+        
+   </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.SmHome.beans">
+
+   <class name="DeviceBean" table="l4_device_info">      
+      <id name="deviceId" type="string" column="device_id">
+         <generator class="assigned"/>
+      </id>
+      <property name="homeId" column="home_id" type="string"/>      
+      <property name="roomId" column="room_id" type="string"/>
+      <property name="description" column="description" type="string"/>
+      <property name="deviceName" column="device_name" type="string"/>
+      <property name="deviceStatus" column="device_status" type="string"/>
+      <property name="extraInfo1" column="extra_info1" type="string"/>
+      <property name="extraInfo2" column="extra_info2" type="string"/>
+        
+   </class>
+</hibernate-mapping>

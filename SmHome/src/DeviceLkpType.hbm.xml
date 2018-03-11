@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.SmHome.beans">
+
+   <class name="DeviceLkpTypeBean" table="devices_lkp_type">      
+      <id name="id" type="int" column="id">
+         <generator class="assigned"/>
+      </id>
+      <property name="roomCode" column="room_code" type="string"/>      
+      <property name="description" column="description" type="string"/>
+      <property name="deviceCode" column="device_code" type="string"/>
+        
+   </class>
+</hibernate-mapping>

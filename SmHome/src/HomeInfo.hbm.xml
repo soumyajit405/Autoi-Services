@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.SmHome.beans">
+
+	<class name="HomeBean" table="l1_home_info">
+		<id name="id" type="string" column="id">
+			<generator class="assigned" />
+		</id>
+		<property name="homeName" column="home_name" type="string" />
+		<property name="homeAddress" column="home_address" type="string" />
+		<property name="lat" column="lat" type="string" />
+		<property name="lng" column="lng" type="string" />
+		<property name="omail" column="owner_mail" type="string" />
+		<property name="cname" column="contracter_name" type="string" />
+		<property name="oname" column="owner" type="string" />
+		<property name="phone" column="phone" type="string" />
+		<property name="type" column="type" type="string" />
+		<property name="status" column="status" type="string" />
+		<property name="entryDate" column="entry_date" type="string" />
+		<property name="extraInfo1" column="extra_info1" type="string" />
+		<property name="extraInfo2" column="extra_info2" type="string" />
+		<property name="apartmentId" column="apt_id" type="string" />
+
+	</class>
+</hibernate-mapping>
